@@ -14,6 +14,11 @@
       line-height: 1.6;
     }
 
+    /* Indent for all paragraphs */
+    p {
+      text-indent: 40px; /* Adjust the number for bigger/smaller indent */
+    }
+
     /* Header */
     header {
       background-color: #800020; /* Burgundy */
@@ -43,7 +48,7 @@
     }
 
     /* Profile photo */
-    img {
+    .profile-photo {
       max-width: 180px;
       border-radius: 50%;
       margin-bottom: 20px;
@@ -53,7 +58,7 @@
     }
 
     h2 {
-      color: #2c3e50;
+      color: #800020; /* Burgundy headings */
       border-bottom: 2px solid #e0e0e0;
       padding-bottom: 5px;
       margin-top: 30px;
@@ -65,7 +70,7 @@
     }
 
     a {
-      color: #2980b9;
+      color: #a52a2a; /* Burgundy accent for links */
       text-decoration: none;
     }
 
@@ -73,11 +78,26 @@
       text-decoration: underline;
     }
 
+    /* Gallery section */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
     /* Footer */
     footer {
       text-align: center;
       padding: 20px;
-      background: #2c3e50;
+      background: #800020; /* Burgundy footer */
       color: #fff;
       margin-top: 40px;
     }
@@ -91,7 +111,7 @@
 
   <div class="container">
     <!-- Profile photo -->
-    <img src="20260506Jess03320-0.jpg" alt="Jessiel May Nicolas Caranto">
+    <img src="20260506Jess03320-0.jpg" alt="Jessiel May Nicolas Caranto" class="profile-photo">
 
     <p>I am Jessiel May Nicolas Caranto, a Global MBA graduate and experienced educator. 
        I specialize in lesson planning, creating engaging learning materials, 
@@ -113,6 +133,13 @@
       <li>Curriculum Design for Elementary Learners</li>
     </ul>
 
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="students.jpg" alt="Jessiel May with Students">
+      <img src="class_activity.jpg" alt="Classroom Activity">
+      <img src="graduation_event.jpg" alt="Graduation Ceremony">
+    </div>
+
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:jessielmay122001@gmail.com">jessielmay122001@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/jessiel-may-caranto-5215b6254" target="_blank">Jessiel May Nicolas Caranto</a></p>
@@ -123,4 +150,3 @@
   </footer>
 </body>
 </html>
-
